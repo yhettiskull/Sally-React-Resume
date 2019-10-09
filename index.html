@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <title>Resume</title>
+    </head>
+    <body>
+            <header>
+                <h1>Sally's Resume</h1>
+            </header>
+        <div id="application-root"></div>
+        <script
+            src="https://unpkg.com/react@16/umd/react.development.js">
+        </script>
+        <script
+            src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+        </script>
+        <script
+        src="https://unpkg.com/babel-standalone@6/babel.min.js">
+        </script>
+        <script type="text/babel">
+           function App(props) {
+                return (
+                    <main>
+                        <section className='contactInfo'>
+                            <img src='https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg'/>
+                            <h3>Contact Me:</h3>
+                            <b>Name: Sally Q. Something</b>
+                            <address>sallyslickshoes@gloopal.ca</address>
+                        </section>
+                        <section className='educationInfo'>
+                            <h2>Education:</h2>
+                            <a href='https://www.thinkful.com/how-we-work/?utm_medium=cpc&utm_medium=cpc&utm_source=google&utm_source=google&utm_source=google&utm_term=thinkful_e&utm_term=thinkful_e&utm_term=thinkful_e&utm_content=thinkful-exact_77350446413_c_fewd-201_call_387908286223&utm_content=thinkful-exact_77350446413_c_fewd-201_call_387908286223&utm_content=thinkful-exact_77350446413_c_fewd-201_call_387908286223&partnership=https%3A%2F%2Fwww.thinkful.com%2Foutcomes%2F%3Futm_medium%3Dcpc&partnership=https%3A%2F%2Fwww.thinkful.com%2Fbootcamp%2Fweb-development%2Fflexible%2F%3Fcall%3Dtrue&partnership=search_us_brand_exact__exact_google_thinkful_fewd-201_call&utm_campaign=search_us_brand_exact__exact&utm_campaign=search_us_brand_exact__exact&utm_campaign=search_us_brand_exact__exact&gclid=Cj0KCQjwivbsBRDsARIsADyISJ83-TqahP4EM11JvM7X8dMsJs_DsrjqjHDL1HUGgiDcZ1E77sxXUwwaArASEALw_wcB'>  
+                                <b>Thinkful</b>
+                            </a>
+                        </section>
+                        <section>
+                            <h2>Employment History:</h2>
+                            <ul>
+                                <li>
+                                    <b>Toys R Us</b>
+                                    <p>Sales Associate</p>
+                                    <p>From: 2010 - 2018</p>
+                                </li>
+                                <li>
+                                    <b>Gloopal Canada</b>
+                                    <p>Senior Back End Developer</p>
+                                    <p>From: 2018 - Present</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </main>
+                );
+            }
+
+            ReactDOM.render(
+                <App />,
+                document.querySelector('#application-root')
+            );
+        </script>
+    </body>
+</html>
